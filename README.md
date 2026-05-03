@@ -127,7 +127,7 @@ Maximise value by greedily selecting items with the highest value-to-weight rati
 
 ### Matrix Multiplication 
 **Category:** Recursive  
-**Time:** `O(n^2.81)` **Space:** `O(n²)`  
+**Time:** `O(n^3)` **Space:** `O(n²)`  
 Multiply two n×n matrices using Strassen's method, reducing sub-multiplications from 8 to 7.
 
 ---
