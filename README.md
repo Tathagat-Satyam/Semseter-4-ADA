@@ -75,41 +75,43 @@ Determine whether a given array contains a sequence of consecutive integers.
 ## Lab 2 — Searching & Insertion Sort
 
 ### Binary Search
-**Category:** Iterative / Recursive  
-**Time:** `O(log n)` **Space:** `O(1)`  
+**Category:** Recursive  
+**Time Complexity:** `O(log n)` 
+**Space Complexity:** `O(1)`  
 Search a sorted array by repeatedly halving the search interval until the target is found or the interval is empty.
 
 ### Insertion Sort
 **Category:** Iterative  
-**Time:** `O(n²)` **Space:** `O(1)`  
+**Time Complexity:** `O(n²)` 
+**Space Complexity:** `O(1)`  
 Build a sorted array one element at a time by inserting each new element into its correct position.
 
----
 
 ## Lab 3 — Divide & Conquer Sorting
 
 ### Merge Sort
 **Category:** Recursive  
-**Time:** `O(n log n)` **Space:** `O(n)`  
+**Time Complexity:** `O(n log n)` 
+**Space Complexity:** `O(n)`  
 Recursively split the array in half, sort each half, and merge the two sorted halves.
 
 ### Quick Sort
 **Category:** Recursive  
-**Time:** `O(n log n)` avg **Space:** `O(log n)`  
+**Time Complexity:** `O(n log n)` 
+**Space Complexity:** `O(log n)`  
 Partition around a pivot, then recursively sort each partition.
 
----
 
 ## Lab 4 — Min-Max Finding
 
 ### Minimum & Maximum
-**Category:** Recursive / Iterative  
-**Time:** `O(n)` **Space:** `O(1)`  
-Find both min and max simultaneously using a tournament / divide-and-conquer approach with fewer than 2(n–1) comparisons.
+**Category:** Recursive  
+**Time Complexity:** `O(n)` 
+**Space Complexity:** `O(1)`  
+Find both min and max simultaneously using divide-and-conquer approach 
 
----
 
-## Lab 5 — Geometric & Optimization Basics
+## Lab 5 
 
 ### Convex Hull
 **Category:** Greedy  
