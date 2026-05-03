@@ -115,15 +115,17 @@ Find both min and max simultaneously using divide-and-conquer approach
 
 ### Convex Hull
 **Category:** Greedy  
-**Time:** `O(n log n)` **Space:** `O(n)`  
-Compute the smallest convex polygon enclosing all given points using Graham Scan or Jarvis March.
+**Time Complexity:** `O(n log n)` 
+**Space Complexity:** `O(n)`  
+Compute the smallest convex polygon enclosing all given points using Graham Scan
 
-### Knapsack Problem (Fractional)
+### Fractional Knapsack Problem
 **Category:** Greedy  
-**Time:** `O(n log n)` **Space:** `O(1)`  
+**Time Complexity:** `O(n log n)` 
+**Space Complexity:** `O(1)`  
 Maximise value by greedily selecting items with the highest value-to-weight ratio, allowing fractional inclusion.
 
-### Matrix Multiplication (Strassen)
+### Matrix Multiplication 
 **Category:** Recursive  
 **Time:** `O(n^2.81)` **Space:** `O(n²)`  
 Multiply two n×n matrices using Strassen's method, reducing sub-multiplications from 8 to 7.
@@ -134,100 +136,90 @@ Multiply two n×n matrices using Strassen's method, reducing sub-multiplications
 
 ### Dijkstra's Algorithm
 **Category:** Greedy, Graph  
-**Time:** `O((V+E) log V)` **Space:** `O(V)`  
+**Time Complexity:** `O((V+E) log V)` **Space Complexity:** `O(V)`  
 Find single-source shortest paths in a weighted graph with non-negative edges using a min-priority queue.
 
 ### Prim's Algorithm
 **Category:** Greedy, Graph  
-**Time:** `O((V+E) log V)` **Space:** `O(V)`  
+**Time Complexity:** `O((V+E) log V)` **Space Complexity:** `O(V)`  
 Grow a Minimum Spanning Tree from an arbitrary vertex by always adding the cheapest crossing edge.
 
 ### Kruskal's Algorithm
 **Category:** Greedy, Graph  
-**Time:** `O(E log E)` **Space:** `O(V)`  
+**Time Complexity:** `O(E log E)` **Space Complexity:** `O(V)`  
 Build an MST by sorting edges and adding the lowest-weight edge that does not form a cycle, tracked via Union-Find.
 
 ### Activity Selection
 **Category:** Greedy  
-**Time:** `O(n log n)` **Space:** `O(1)`  
+**Time Complexity:** `O(n log n)` **Space Complexity:** `O(1)`  
 Select the maximum number of non-overlapping activities by always choosing the one that finishes earliest.
 
----
 
 ## Lab 7 — Graph Traversal Techniques
 
 ### Cycle Detection
 **Category:** Graph, Recursive  
-**Time:** `O(V+E)` **Space:** `O(V)`  
+**Time Complexity:** `O(V+E)` **Space Complexity:** `O(V)`  
 Detect cycles in directed and undirected graphs using DFS coloring (white-gray-black) or Union-Find.
 
 ### Multistage Graph (Greedy)
 **Category:** Greedy, Graph  
-**Time:** `O(V+E)` **Space:** `O(V)`  
+**Time Complexity:** `O(V+E)` **Space Complexity:** `O(V)`  
 Find the shortest path through a layered graph using a greedy forward pass.
 
----
 
-## Lab 8 — Dynamic Programming Fundamentals
+## Lab 8 — Dynamic Programming
 
 ### Matrix Chain Multiplication
 **Category:** Dynamic Programming  
-**Time:** `O(n³)` **Space:** `O(n²)`  
+**Time Complexity:** `O(n³)` **Space Complexity:** `O(n²)`  
 Determine the optimal parenthesisation of a matrix chain to minimise scalar multiplications using bottom-up DP.
 
 ### Multistage Graph — Forward Approach
 **Category:** Dynamic Programming, Graph  
-**Time:** `O(V+E)` **Space:** `O(V)`  
+**Time Complexity:** `O(V+E)` **Space Complexity:** `O(V)`  
 Compute the minimum-cost path through a multistage graph by propagating cost estimates forward from the source.
 
 ### Multistage Graph — Backward Approach
 **Category:** Dynamic Programming, Graph  
-**Time:** `O(V+E)` **Space:** `O(V)`  
+**Time Complexity:** `O(V+E)` **Space Complexity:** `O(V)`  
 Compute the minimum-cost path by propagating cost estimates backward from the sink to the source.
 
----
 
 ## Lab 9 — All-Pairs Shortest Paths
 
-### Floyd-Warshall Algorithm
-**Category:** Dynamic Programming, Graph  
-**Time:** `O(V³)` **Space:** `O(V²)`  
+### Algorithm
+**Category:** Dynamic Programming  
+**Time Complexity:** `O(V³)` **Space Complexity:** `O(V²)`  
 Compute shortest paths between all pairs of vertices in a weighted graph, handling negative edges but not negative cycles.
 
----
 
-## Lab 10 — Advanced DP & TSP
+## Lab 10 
 
 ### 0/1 Knapsack
 **Category:** Dynamic Programming  
-**Time:** `O(nW)` **Space:** `O(nW)`  
+**Time Complexity:** `O(nW)` **Space Complexity:** `O(nW)`  
 Maximise total value without exceeding weight capacity W; each item is either fully taken or left.
-
-### Merge Purge
-**Category:** Dynamic Programming  
-**Time:** `O(n log n)` **Space:** `O(n)`  
-Eliminate dominated solutions from the DP state space, retaining only Pareto-optimal entries.
 
 ### Travelling Salesperson Problem
 **Category:** Dynamic Programming  
-**Time:** `O(n² 2ⁿ)` **Space:** `O(n 2ⁿ)`  
+**Time Complexity:** `O(n² 2ⁿ)` **Space Complexity:** `O(n 2ⁿ)`  
 Find the minimum-cost Hamiltonian cycle using Held-Karp bitmask DP.
 
----
 
 ## Lab 11 — Backtracking
 
 ### N-Queens
 **Category:** Backtracking, Recursive  
-**Time:** `O(n!)` **Space:** `O(n)`  
+**Time Complexity:** `O(n!)` **Space Complexity:** `O(n)`  
 Place n non-attacking queens on an n×n board by column-by-column exploration with constraint pruning.
 
 ### Subset Sum
 **Category:** Backtracking, Recursive  
-**Time:** `O(2ⁿ)` **Space:** `O(n)`  
+**Time Complexity:** `O(2ⁿ)` **Space Complexity:** `O(n)`  
 Find all subsets whose elements sum to a target value using recursive inclusion/exclusion with pruning.
 
 ### Graph Colouring
 **Category:** Backtracking, Graph  
-**Time:** `O(mⁿ)` **Space:** `O(V)`  
+**Time Complexity:** `O(mⁿ)` **Space Complexity:** `O(V)`  
 Assign m colours to vertices so no two adjacent vertices share a colour, explored via backtracking with constraint checking.
